@@ -112,7 +112,7 @@ code {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 275ms ease-in-out;
+  transition: background-position 500ms ease;
   text-decoration: none;
 }
 
