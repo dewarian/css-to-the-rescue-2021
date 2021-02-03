@@ -1,3 +1,46 @@
+**Table of Content**
+- [Plan](#week-1)
+- [Voortgang](#week-2)
+- [Voortgang part II](#week-3)
+- [Afronding](#week-4)
+
+---
+
+# Week 4
+## Eind resultaat
+## Punten
+### Soepel
+### Stroef
+### Trots
+## Inzichten
+Wat heb ik geleerd
+## Meer
+Waar wil ik meer mee gaan doen? Zijn er CSS vaardigheden waar ik sterk(er) in wil worden?
+
+
+# Week 3
+## Progressie in week 3
+### Wat ging soepel
+### Wat ging tegenstrijdig
+### Inzichten CSS-POWER
+### Wijzigingen planning
+### Nieuwe uitdagingen
+
+# Week 2
+## Progressie in week 2
+### Wat ging soepel
+### Wat ging Stroef
+### Inzichten CSS-POWER
+### Wijzigingen planning
+### Nieuwe uitdagingen
+
+# Week 1
+### Welke opdracht
+### Welke opties qua uitwerking
+### CSS technieken
+### Grootste uitdagingen
+### Schetsen || Breakdown-schets
+
 # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
 Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de  mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
