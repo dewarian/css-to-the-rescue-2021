@@ -1,3 +1,11 @@
+**Table of Content**
+- [Information](#info)
+- [Plan](#week-1)
+- [Progression](#week-2)
+- [Progression part II](#week-3)
+- [Finish](#week-4)
+
+
 # Info
 
 The core of this subject is to stress on CSS. We aren't allowed to use any JavaScript for interaction and have to find alternatives for those interactions.
@@ -17,14 +25,6 @@ There are two restrictions in this course:
       * Ask teachers
       * Use class or ID.
 1. Don't use JavaScript. If you plan to use interaction which isn't achievable by using CSS, scrap that interaction.
-
-
-**Table of Content**
-- [Plan](#week-1)
-- [Progression](#week-2)
-- [Progression part II](#week-3)
-- [Finish](#week-4)
-
 
 
 ---
