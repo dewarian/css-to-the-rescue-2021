@@ -36,12 +36,33 @@ Waar wil ik meer mee gaan doen? Zijn er CSS vaardigheden waar ik sterk(er) in wi
 
 # Week 1
 ### Welke opdracht
+Menu-kaart visualiseren met animaties in een strak ontwerp.
 ### Welke opties qua uitwerking
+
+#### Contexten
+Voor de context wil ik het volgende uitoefenen op het menukaart.
+- print-stylesheet  
+  - Zodat de gebruiker een statische variant heeft om deze uit te printen.
+- prefers-color-scheme  
+  - Zodat de menu samenwerkt met de de preferenties van de website.  
+  Ook ervoor te zorgen dat dit nog zichtbaar is op high-contrast-mode.
+
+ #### Restricties
+Qua restricties wil ik het volgende uitoefenen
+- Twee kleuren
+  - Met twee kleuren wil ik de website visualiseren. Deze twee kleuren worden naast zwart en wit gebruikt om de visualisatie te versterken.  
+  _Zwart en wit zijn officieel geen kleuren maar [tinten](https://www.adobe.com/creativecloud/design/discover/is-black-a-color.html#:~:text=Black%20is%20the%20absence%20of,on%20the%20visible%20light%20spectrum.&text=But%20in%20a%20technical%20sense,colors%2C%20they're%20shades.)_.  - Responsive zonder media queries  
+  - Het responsive maken van het menu zonder ```@media only screen and (min-width: 600px)```
+    Hiervoor zullen CSS technieken zoals ```grid``` en ```flex``` gebruikt worden.
 ### CSS technieken
 ### Grootste uitdagingen
 ### Schetsen || Breakdown-schets
 
-# CSS to the Rescue @cmda-minor-web 2020 - 2021
+
+--
+<details>
+  <summary>Original Repo Content</summary>
+  # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
 Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de  mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
 
@@ -88,3 +109,5 @@ Colleges, lessen en gesprekken vinden plaats [in Teams](https://teams.microsoft.
 Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren. En als het echt echt echt niet anders kan, heb je permissie om een paar classes toe te voegen.
 
 Een **tweede uitgangspunt** is dat je *geen* JS gebruikt (i.i.g. zo min mogelijk - het vak heet niet voor niets CSS to the Rescue). Wat met CSS en/of HTML kan mag je *niet* met JS realiseren en het is *niet* toegestaan om CSS properties met JS aan te passen. We vinden het daarentegen wel interessant dat je verkent waar JS en CSS elkaar raken/versterken, bijv. het [uitlezen en aanpassen van CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), of bijv. de [animationstart](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationstart_event), [animationcancel](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationcancel_event), [animationiteration](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationiteration_event) en [animationend](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event) events gebruiken.
+
+</details>
