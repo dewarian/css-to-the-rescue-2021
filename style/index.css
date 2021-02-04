@@ -67,6 +67,11 @@ figure img{
   min-width: 50%;
 }
 
+figure >figcaption:nth-last-of-type(1) {
+  width: 110px;
+  text-align: center;
+}
+
 footer{
   width: 200px;
   position: fixed;
