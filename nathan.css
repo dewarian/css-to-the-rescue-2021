@@ -124,7 +124,7 @@ code {
 }
 
 footer{
-  margin-top: 22vh;
+  margin-top: 20vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
