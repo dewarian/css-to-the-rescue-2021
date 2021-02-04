@@ -1,62 +1,85 @@
+# Info
+
+The core of this subject is to stress on CSS. We aren't allowed to use any JavaScript for interaction and have to find alternatives for those interactions.
+
+The goals for this subject is as following:
+* Experiment with CSS-techniques that are new for you.
+* Know the full extent of CSS, that CSS is not just for styling.
+* Understanding of the interaction techniques from CSS (and HTML). UX is humane within the chosen context(s).
+* Progressive enhancement is elegantly applied. You can show how cascase, inheritance and specificity works.
+
+There are two restrictions in this course:
+1. Don't use ```id="id"``` or ```class="class"```. The reason for this restriction is so we practice with the CSS selectors.
+    - The caveat for this restriction is the ```:target``` selector which requires an ID.
+    - If you don't see a way out without ID's or classes, follow the following steps:
+      * Google it
+      * Ask students
+      * Ask teachers
+      * Use class or ID.
+1. Don't use JavaScript. If you plan to use interaction which isn't achievable by using CSS, scrap that interaction.
+
+
 **Table of Content**
 - [Plan](#week-1)
-- [Voortgang](#week-2)
-- [Voortgang part II](#week-3)
-- [Afronding](#week-4)
+- [Progression](#week-2)
+- [Progression part II](#week-3)
+- [Finish](#week-4)
+
+
 
 ---
 
 # Week 4
-## Eind resultaat
-## Punten
-### Soepel
-### Stroef
-### Trots
-## Inzichten
-Wat heb ik geleerd
-## Meer
-Waar wil ik meer mee gaan doen? Zijn er CSS vaardigheden waar ik sterk(er) in wil worden?
-
+## Result
+## Tip Top Improve
+### Went Well
+### Went Bad
+### Proud
+## Insight
+What have I learned
+## Misc
+What do I want to improve further? Which CSS skills will I improve upon?
 
 # Week 3
-## Progressie in week 3
-### Wat ging soepel
-### Wat ging tegenstrijdig
-### Inzichten CSS-POWER
-### Wijzigingen planning
-### Nieuwe uitdagingen
+## Progression week 3
+### Went Well
+### Went Bad
+### Insights CSS-POWER
+### Change of Plans
+### New Challenges
 
 # Week 2
-## Progressie in week 2
-### Wat ging soepel
-### Wat ging Stroef
-### Inzichten CSS-POWER
-### Wijzigingen planning
-### Nieuwe uitdagingen
+## Progression week 2
+### Went Well
+### Went Bad
+### Insights CSS-POWER
+### Change of Plans
+### New Challenges
 
 # Week 1
-### Welke opdracht
-Menu-kaart visualiseren met animaties in een strak ontwerp.
-### Welke opties qua uitwerking
+### Which Assignment
+I would like to visualize the menu with animations and a sleek design.
+### Which Context and Restrictions
 
-#### Contexten
-Voor de context wil ik het volgende uitoefenen op het menukaart.
+#### Contexts
+The contexts I would like to apply to the menu:
 - print-stylesheet  
-  - Zodat de gebruiker een statische variant heeft om deze uit te printen.
+  - To have a visually appealing menu on paper..
 - prefers-color-scheme  
-  - Zodat de menu samenwerkt met de de preferenties van de website.  
-  Ook ervoor te zorgen dat dit nog zichtbaar is op high-contrast-mode.
+  - Menu follows the system's appearance, be it light or dark mode.Zodat de menu samenwerkt met de de preferenties van de website.  
+    - To go an extra step the menu would also be available in a high contrast mode by using ```@media (prefers-constrast: no-preference || more || less )```.
+      - Currently according to mozilla it is only available in [firefox version 80 and beyond.](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast) but according to [caniuse.com](https://caniuse.com/?search=prefers-contrast) in no browsers. 🧪**requires testing**.🧪
 
- #### Restricties
-Qua restricties wil ik het volgende uitoefenen
-- Twee kleuren
-  - Met twee kleuren wil ik de website visualiseren. Deze twee kleuren worden naast zwart en wit gebruikt om de visualisatie te versterken.  
-  _Zwart en wit zijn officieel geen kleuren maar [tinten](https://www.adobe.com/creativecloud/design/discover/is-black-a-color.html#:~:text=Black%20is%20the%20absence%20of,on%20the%20visible%20light%20spectrum.&text=But%20in%20a%20technical%20sense,colors%2C%20they're%20shades.)_.  - Responsive zonder media queries  
-  - Het responsive maken van het menu zonder ```@media only screen and (min-width: 600px)```
-    Hiervoor zullen CSS technieken zoals ```grid``` en ```flex``` gebruikt worden.
-### CSS technieken
-### Grootste uitdagingen
-### Schetsen || Breakdown-schets
+#### Restrictions
+To challenge myself, I have picked the following restrictions:
+- Two colours
+  - With this restriction I would like to enhance the visibility of the website but also experiment with filters and such. Ofcourse I still will use black and white as those are [tints and shades, not colours](https://www.adobe.com/creativecloud/design/discover/is-black-a-color.html#:~:text=Black%20is%20the%20absence%20of,on%20the%20visible%20light%20spectrum.&text=But%20in%20a%20technical%20sense,colors%2C%20they're%20shades.).
+- Responsive design without media queries  
+  - Creating a responsive menu for small screen users without ```@media only screen and (min-width: 600px)```  
+    This will be done with techniques like ```grid``` and ```flex```.
+### CSS Techniques
+### Biggest Challenge
+### Sketches
 
 
 ---
