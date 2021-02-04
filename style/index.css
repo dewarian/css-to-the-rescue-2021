@@ -50,8 +50,8 @@ article article {
 
 figure{
   background-color: #fff;
-  min-width: 168px;
-  max-width: 20vw;
+  min-width: 128px;
+  max-width: 13vw;
   max-height: 35vh;
   border-radius: 5px;
 
@@ -64,12 +64,7 @@ figure{
 figure img{
   flex-grow: 1;
   max-width: 65%;
-  min-width: 50%;
-}
-
-figure >figcaption:nth-last-of-type(1) {
-  width: 110px;
-  text-align: center;
+  min-width: 120px;
 }
 
 footer{
