@@ -59,7 +59,7 @@ Qua restricties wil ik het volgende uitoefenen
 ### Schetsen || Breakdown-schets
 
 
---
+---
 <details>
   <summary>Original Repo Content</summary>
   # CSS to the Rescue @cmda-minor-web 2020 - 2021
