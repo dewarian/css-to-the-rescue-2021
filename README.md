@@ -1,47 +1,91 @@
 **Table of Content**
+- [Information](#info)
 - [Plan](#week-1)
-- [Voortgang](#week-2)
-- [Voortgang part II](#week-3)
-- [Afronding](#week-4)
+- [Progression](#week-2)
+- [Progression part II](#week-3)
+- [Finish](#week-4)
+
+
+# Info
+
+The core of this subject is to stress on CSS. We aren't allowed to use any JavaScript for interaction and have to find alternatives for those interactions.
+
+The goals for this subject is as following:
+* Experiment with CSS-techniques that are new for you.
+* Know the full extent of CSS, that CSS is not just for styling.
+* Understanding of the interaction techniques from CSS (and HTML). UX is humane within the chosen context(s).
+* Progressive enhancement is elegantly applied. You can show how cascase, inheritance and specificity works.
+
+There are two restrictions in this course:
+1. Don't use ```id="id"``` or ```class="class"```. The reason for this restriction is so we practice with the CSS selectors.
+    - The caveat for this restriction is the ```:target``` selector which requires an ID.
+    - If you don't see a way out without ID's or classes, follow the following steps:
+      * Google it
+      * Ask students
+      * Ask teachers
+      * Use class or ID.
+1. Don't use JavaScript. If you plan to use interaction which isn't achievable by using CSS, scrap that interaction.
+
 
 ---
 
 # Week 4
-## Eind resultaat
-## Punten
-### Soepel
-### Stroef
-### Trots
-## Inzichten
-Wat heb ik geleerd
-## Meer
-Waar wil ik meer mee gaan doen? Zijn er CSS vaardigheden waar ik sterk(er) in wil worden?
-
+## Result
+## Tip Top Improve
+### Went Well
+### Went Bad
+### Proud
+## Insight
+What have I learned
+## Misc
+What do I want to improve further? Which CSS skills will I improve upon?
 
 # Week 3
-## Progressie in week 3
-### Wat ging soepel
-### Wat ging tegenstrijdig
-### Inzichten CSS-POWER
-### Wijzigingen planning
-### Nieuwe uitdagingen
+## Progression week 3
+### Went Well
+### Went Bad
+### Insights CSS-POWER
+### Change of Plans
+### New Challenges
 
 # Week 2
-## Progressie in week 2
-### Wat ging soepel
-### Wat ging Stroef
-### Inzichten CSS-POWER
-### Wijzigingen planning
-### Nieuwe uitdagingen
+## Progression week 2
+### Went Well
+### Went Bad
+### Insights CSS-POWER
+### Change of Plans
+### New Challenges
 
 # Week 1
-### Welke opdracht
-### Welke opties qua uitwerking
-### CSS technieken
-### Grootste uitdagingen
-### Schetsen || Breakdown-schets
+### Which Assignment
+I would like to visualize the menu with animations and a sleek design.
+### Which Context and Restrictions
 
-# CSS to the Rescue @cmda-minor-web 2020 - 2021
+#### Contexts
+The contexts I would like to apply to the menu:
+- print-stylesheet  
+  - To have a visually appealing menu on paper..
+- prefers-color-scheme  
+  - Menu follows the system's appearance, be it light or dark mode.Zodat de menu samenwerkt met de de preferenties van de website.  
+    - To go an extra step the menu would also be available in a high contrast mode by using ```@media (prefers-constrast: no-preference || more || less )```.
+      - Currently according to mozilla it is only available in [firefox version 80 and beyond.](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast) but according to [caniuse.com](https://caniuse.com/?search=prefers-contrast) in no browsers. 🧪**requires testing**.🧪
+
+#### Restrictions
+To challenge myself, I have picked the following restrictions:
+- Two colours
+  - With this restriction I would like to enhance the visibility of the website but also experiment with filters and such. Ofcourse I still will use black and white as those are [tints and shades, not colours](https://www.adobe.com/creativecloud/design/discover/is-black-a-color.html#:~:text=Black%20is%20the%20absence%20of,on%20the%20visible%20light%20spectrum.&text=But%20in%20a%20technical%20sense,colors%2C%20they're%20shades.).
+- Responsive design without media queries  
+  - Creating a responsive menu for small screen users without ```@media only screen and (min-width: 600px)```  
+    This will be done with techniques like ```grid``` and ```flex```.
+### CSS Techniques
+### Biggest Challenge
+### Sketches
+
+
+---
+<details>
+  <summary>Original Repo Content</summary>
+  # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
 Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de  mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
 
@@ -88,3 +132,5 @@ Colleges, lessen en gesprekken vinden plaats [in Teams](https://teams.microsoft.
 Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren. En als het echt echt echt niet anders kan, heb je permissie om een paar classes toe te voegen.
 
 Een **tweede uitgangspunt** is dat je *geen* JS gebruikt (i.i.g. zo min mogelijk - het vak heet niet voor niets CSS to the Rescue). Wat met CSS en/of HTML kan mag je *niet* met JS realiseren en het is *niet* toegestaan om CSS properties met JS aan te passen. We vinden het daarentegen wel interessant dat je verkent waar JS en CSS elkaar raken/versterken, bijv. het [uitlezen en aanpassen van CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), of bijv. de [animationstart](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationstart_event), [animationcancel](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationcancel_event), [animationiteration](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationiteration_event) en [animationend](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event) events gebruiken.
+
+</details>
