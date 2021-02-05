@@ -81,6 +81,11 @@ To challenge myself, I have picked the following restrictions:
 ### Biggest Challenge
 ### Sketches
 
+[Dribbble inspiration](https://dribbble.com/Dewarian/collections/4446378-Menu-Inspo)
+**Things to be cautious about**
+- Colours that work and are clearly visible on either black or white.
+[Similar Behance inspiration](https://www.behance.net/search/images?similarStyleImagesId=546989879)
+[Behance inspiration](https://www.behance.net/collection/182174061/Menu-Inspo)
 
 ---
 <details>
