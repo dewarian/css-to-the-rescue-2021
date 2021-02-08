@@ -66,7 +66,7 @@ The contexts I would like to apply to the menu:
 - print-stylesheet  
   - To have a visually appealing menu on paper..
 - prefers-color-scheme  
-  - Menu follows the system's appearance, be it light or dark mode.Zodat de menu samenwerkt met de de preferenties van de website.  
+  - Menu follows the system's appearance, be it light or dark mode.
     - To go an extra step the menu would also be available in a high contrast mode by using ```@media (prefers-constrast: no-preference || more || less )```.
       - Currently according to mozilla it is only available in [firefox version 80 and beyond.](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast) but according to [caniuse.com](https://caniuse.com/?search=prefers-contrast) in no browsers. 🧪**requires testing**.🧪
 
@@ -77,15 +77,18 @@ To challenge myself, I have picked the following restrictions:
 - Responsive design without media queries  
   - Creating a responsive menu for small screen users without ```@media only screen and (min-width: 600px)```  
     This will be done with techniques like ```grid``` and ```flex```.
-### CSS Techniques
-### Biggest Challenge
-### Sketches
+#### CSS Techniques
+#### Biggest Challenge
+#### Sketches
 
 [Dribbble inspiration](https://dribbble.com/Dewarian/collections/4446378-Menu-Inspo)
 **Things to be cautious about**
 - Colours that work and are clearly visible on either black or white.
 [Similar Behance inspiration](https://www.behance.net/search/images?similarStyleImagesId=546989879)
 [Behance inspiration](https://www.behance.net/collection/182174061/Menu-Inspo)
+
+#### Feedback
+The feedback that I have received Friday was that it is a cool idea, and it is possible with CSS. Besides that I also need to do a first sketch, breakdown sketch, how I want to animate it and what my CSS challenges will be.
 
 ---
 <details>
