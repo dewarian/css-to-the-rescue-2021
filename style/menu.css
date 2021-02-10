@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+body {
+  margin: auto 2vw;
+}
+
 /*  
   SOURCE: https://css-tricks.com/adding-stroke-to-web-text/
   Description: transforms text into outline text
@@ -45,10 +49,15 @@ main {
 main > section{
   border: 1px solid black;
   margin: 1em;
+  /* transition hover */
+  transition: box-shadow 0.5s;
 }
 
-main > section:hover, main > section:target {
-  box-shadow: lawngreen 20px;
+main > section:hover{
+  box-shadow: 10px 10px black;
+}
+main > section:target {
+  border: 5px dashed var(--color);
 }
 
 article > div:before{
