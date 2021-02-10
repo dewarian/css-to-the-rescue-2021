@@ -142,6 +142,14 @@ The feedback that I have received Friday was that it is a cool idea, and it is p
 ---
 
 <details>
+<summary>Notes | links</summary>
+<a href="https://codepen.io/cferdinandi/pen/LqGZrb">https://codepen.io/cferdinandi/pen/LqGZrb</a>
+
+<a href="https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/">https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/</a>
+
+</details>
+
+<details>
   <summary>Original Repo Content</summary>
   # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
