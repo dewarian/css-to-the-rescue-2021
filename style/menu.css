@@ -1,11 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
 :root{
   --color: #ffcc00;
   --color-1: crimson
 }
 * {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Noto Sans JP', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/*  
+  SOURCE: https://css-tricks.com/adding-stroke-to-web-text/
+  Description: transforms text into outline text
+*/
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 3em;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  /* writing-mode: vertical-lr; */
+  /* text-orientation: sideways-right; */
+
+  text-align: center;
+}
+
+h1:before{
+  content: "Russ & Daughters";
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  opacity: 30%;
+  -webkit-text-fill-color: #FFCC00;  
+}
+
+section{
+  border: 1px solid black;
+  margin: 1em;
 }
