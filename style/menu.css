@@ -103,8 +103,13 @@ main > section:nth-last-child(1) {
   border-radius: 4em 1em / 6em 1em;
   display: flex;
   overflow-x: auto;
+
+  /* Hide scrollbar keep functionality Edge & Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
+/* Hide scrollbar, keep functionality Chrome, Safari */
 main > section:nth-last-child(1)::-webkit-scrollbar {
   display: none;
 }
