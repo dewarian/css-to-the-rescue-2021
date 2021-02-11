@@ -118,10 +118,10 @@ In my opinion the biggest challenge would be the animating and interaction part 
 
 #### Sketches
 
-| First concept                                                      | Second concept                                               |
-| ------------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./style/assets/first-idea.png" style="width: 15vw" />    | <img src="./style/assets/concept.jpg" style="width: 15vw" /> |
-| My first idea was a typical menu, divided in blocks per categorie. | After browsing and thinking I decided to take another step.  |
+| First concept                                                      | Second concept                                                |
+| ------------------------------------------------------------------ | ------------------------------------------------------------- |
+| <img src="./style/assets/first-idea.png" style="width: 300px" />   | <img src="./style/assets/concept.jpg" style="width: 300px" /> |
+| My first idea was a typical menu, divided in blocks per categorie. | After browsing and thinking I decided to take another step.   |
 
 [Dribbble inspiration](https://dribbble.com/Dewarian/collections/4446378-Menu-Inspo)
 **Things to be cautious about**
