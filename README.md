@@ -68,15 +68,36 @@ What do I want to improve further? Which CSS skills will I improve upon?
 
 ## Progression week 2
 
+![](./style/assets/progress-2.png)
+![](./style/assets/progress-1.png)
+
 ### Went Well
+
+- Creating a grid for every section.
+- Using CSS selectors.
 
 ### Went Bad
 
+- Organizing my thoughts.
+- Keeping the CSS structured.
+- Animations
+  - Not sure how to add animations to my idea. Might solely focus on transitions.
+- Adhering to one idea. Currently my project isn't made based on the restriction or contexts.
+
 ### Insights CSS-POWER
+
+There are many different keywords to do something in CSS.
+For example, selectors, There are similar things that just work differently but can easily achieve the same. For example a responsive design can be easily made with 6 lines of CSS with grid.
 
 ### Change of Plans
 
+Move towards a style and enhance that style.
+
 ### New Challenges
+
+1. Write clean CSS.
+1. Implement interaction with animation and transition.
+1. Create a mouse-free website?
 
 # Week 1
 
