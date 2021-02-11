@@ -110,6 +110,10 @@ main > section:nth-last-child(1) * {
   font-size: 15px;
 }
 
+main > section:nth-last-child(1) {
+  padding: 0;
+}
+
 main section:nth-child(7) > h2 {
   writing-mode: vertical-lr;
   font-size: 4em;
@@ -120,6 +124,7 @@ main section:nth-child(7) > h2 {
 }
 
 main section:nth-child(7) blockquote {
+  padding-top: 2em;
   text-decoration: underline;
   transform: skew(-20deg);
   margin-right: 200px;
