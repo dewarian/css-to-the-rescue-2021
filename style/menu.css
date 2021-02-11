@@ -20,11 +20,12 @@
 }
 
 body {
-  margin: auto 2vw;
+  margin: auto 1vw;
       background-image: paint(dot-grid);
     --dot-size: 4px;
     --dot-spacing: 32px;
     --dot-color: white;
+
 }
 
 body > header:first-child, header:before {
@@ -64,29 +65,46 @@ h1:before{
     opacity: 30%;
   }to {
     -webkit-text-fill-color: var(--complimentary);
-    opacity: 30%;
+    opacity: 60%;
   }
 }
 
+header h1+p {
+  position: absolute;
+  top: 0.5em;
+  left: 28em;
+  height: max-content;
+  padding: 0.5rem;
+  text-decoration: underline;
+  writing-mode: vertical-rl;
+  background: var(--color);
+  color: var(--complimentary);
+  transform: rotate(-110deg);
+  transition: transform 1s;
+}
+
+header h1+p:hover {
+  transform: rotate(260deg);
+}
 
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2vw;
-  overflow: hidden;
-  margin: 1em;
 }
 
 main > section{
   border: 1px solid black;
   padding: 1em;
   /* transition hover */
-  transition: box-shadow 0.5s;
+  transition: box-shadow .5s;
 }
 
 main > section:hover{
   /* requires X and Y axis */
   box-shadow: 0.3rem 0.3rem rgba(var(--black));
+
+
 }
 main > section:target {
   border: 5px dashed var(--color);
@@ -95,6 +113,7 @@ main > section:target {
 section > header {
   width: calc(50vw - 6em);
 }
+
 
 article > div:before{
   content: "€";
