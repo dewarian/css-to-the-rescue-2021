@@ -21,10 +21,12 @@
 
 body {
   margin: auto 1vw;
+  overflow-x: clip;
 }
 
 body > header:first-child, header:before {
   transform: translateX(30vw);
+  width: 40vw;
 }
 
 /*  
@@ -39,7 +41,6 @@ h1 {
   -webkit-text-stroke-color: var(--dark);
   /* writing-mode: vertical-lr; */
   /* text-orientation: sideways-right; */
-  
 }
 
 h1:before{
@@ -82,14 +83,6 @@ header h1+p:hover {
   transform: rotate(260deg);
 }
 
-@keyframes noise{
-  from{
-
-  }to{
-
-  }
-}
-
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -106,22 +99,55 @@ main > section{
 main > section:nth-last-child(1) {
   background-color: var(--color);
   grid-column: 1 / 4;
-  padding: 4em;
+  /* padding: 4em; */
   border-radius: 4em 1em / 6em 1em;
-}
 
+  display: flex;
+  overflow-x: auto;
+}
 
 main > section:nth-last-child(1) * {
   font-size: 15px;
 }
 
+main section:nth-child(7) > h2 {
+  writing-mode: vertical-lr;
+  font-size: 4em;
+  position: sticky;
+  left: 0;
+  background-color: var(--complimentary);
+  z-index: 3;
+}
+
 main section:nth-child(7) blockquote {
   text-decoration: underline;
   transform: skew(-20deg);
+  margin-right: 200px;
 }
 
-main > section:nth-last-child(1) article:nth-child(2n) {
-  color: var(--pretty-color1)
+main section:nth-child(7) blockquote * {
+  width: 15em;
+  color: rgba(var(--black))
+}
+
+main section:nth-child(7) > article{
+  padding: 2em;
+  width: 40%;
+  flex-shrink: 0;
+  margin-right: 2em;
+}
+main section:nth-child(7) article:last-of-type {
+  width: 25vw;
+}
+
+main section:nth-child(7) > article > h3 {
+  font-size: 3em;
+}
+
+/* Last section change color for every other article */
+main > section article:nth-child(2n) {
+  color: var(--pretty-color1);
+  margin-bottom: 1em;
 }
 
 main > section:hover{
