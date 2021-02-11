@@ -21,6 +21,10 @@
 
 body {
   margin: auto 2vw;
+      background-image: paint(dot-grid);
+    --dot-size: 4px;
+    --dot-spacing: 32px;
+    --dot-color: white;
 }
 
 body > header:first-child, header:before {
