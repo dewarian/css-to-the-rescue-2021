@@ -101,9 +101,12 @@ main > section:nth-last-child(1) {
   grid-column: 1 / 4;
   /* padding: 4em; */
   border-radius: 4em 1em / 6em 1em;
-
   display: flex;
   overflow-x: auto;
+}
+
+main > section:nth-last-child(1)::-webkit-scrollbar {
+  display: none;
 }
 
 main > section:nth-last-child(1) * {
