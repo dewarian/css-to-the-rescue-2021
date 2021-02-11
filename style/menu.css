@@ -21,8 +21,8 @@
 
 body {
   margin: auto 1vw;
-      background-image: paint(dot-grid);
-    --dot-size: 4px;
+      /* background-image: paint(dot-grid); */
+    --dot-size: 12px;
     --dot-spacing: 32px;
     --dot-color: white;
 
@@ -89,7 +89,7 @@ header h1+p:hover {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 2vw;
 }
 
@@ -98,6 +98,27 @@ main > section{
   padding: 1em;
   /* transition hover */
   transition: box-shadow .5s;
+}
+
+main > section:nth-last-child(1) {
+  background-color: var(--color);
+  grid-column: 1 / 4;
+  padding: 4em;
+  border-radius: 4em 1em / 6em 1em;
+}
+
+
+main > section:nth-last-child(1) * {
+  font-size: 15px;
+}
+
+main section:nth-child(7) blockquote {
+  text-decoration: underline;
+  transform: skew(-20deg);
+}
+
+main > section:nth-last-child(1) article:nth-child(2n) {
+  color: var(--pretty-color1)
 }
 
 main > section:hover{
@@ -126,6 +147,7 @@ article > div:before{
   }
   body {
     background-color: var(--darkmode);
+    --dot-color: var(var(--lightmode));
     color: #F3F3F4;
   }
   section {
