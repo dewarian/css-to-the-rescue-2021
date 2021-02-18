@@ -18,10 +18,13 @@
 }
 
 body {
-  max-width: 75vw;
+  width: clamp(350px, 75vw, 90vw);
   margin: 0 auto;
   display: grid;
   grid-template-rows: [nav-begin] 100px [nav-end] 2fr [middle-end] auto [categories];
+  /* https://dev.to/clairecodes/how-to-create-a-polka-dot-background-with-css-23m0  */
+  background-image: radial-gradient(rgba(var(--black), 0.05) 3px, #ffffff00 0px);
+  background-size: 24px 24px;
 }
 
 body > header {
@@ -41,11 +44,18 @@ main {
 }
 
 main section {
+  min-height: 300px;
+  height: 15vw;
+  /* padding: 0.5em 0.5em 0.5em 0; */
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   /* Hide scrollbar keep functionality Edge & Firefox */
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  background-color: rgb(var(--white));
+  border: rgb(var(--black)) 1px solid;
 }
 /* Hide scrollbar, keep functionality Chrome, Safari */
 main section::-webkit-scrollbar{
@@ -54,12 +64,38 @@ main section::-webkit-scrollbar{
 
 main section header {
   background-color: var(--primary);
+  color: rgb(var(--white));
+  text-transform: uppercase;
   position: sticky;
   left: 0;
+  height: 100%;
 }
+
+main section header {
+  padding: 0.3em;
+  writing-mode: vertical-lr;
+}
+
+header > h2 {
+  font-size: clamp(1.5em, 100vh, 15px);
+}
+
+h2 + p {
+  background-color: var(--secondary);
+  font-size: clamp(0.8rem, 1rem, 99px);
+  
+}
+
 main section article {
-  width: 40%;
+  padding: 16px;
+  width: clamp(210px, 50vw, 80vw);
+  /* width: 210px; */
   flex-shrink: 0;
+  scroll-snap-type: y;
+}
+
+article:nth-child(2) {
+  width: 100%;
 }
 
 /* Hiding content the right way
