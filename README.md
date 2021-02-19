@@ -70,15 +70,18 @@ Working with animations and transistions as that was my plan for this week.
 
 ### Insights CSS-POWER
 
-CSS has alot of hidden properties that change the whole dynamic.
+CSS has alot of hidden properties that change the whole dynamic of what CSS is in my opinion.
 
 ### Change of Plans
 
-Changing the concept to allow for CSS experimentations. Don't be bland, be extravagant.
+Changing the concept to allow for CSS experimentations.
+Don't be bland, be extravagant.
 
 ### New Challenges
 
 Making it pretty with animations and transitions. Possibly go wild and do something special per section.
+
+I would like to animate either the background or sections to a visually pleasing component, with CSS shapes or with animations to show or hide the dishes. just like the following example:
 
 # Week 2
 
