@@ -56,6 +56,8 @@ main section {
 
   background-color: rgb(var(--white));
   border: rgb(var(--black)) 1px solid;
+
+  scroll-snap-type: x mandatory;
 }
 /* Hide scrollbar, keep functionality Chrome, Safari */
 main section::-webkit-scrollbar{
@@ -89,13 +91,14 @@ h2 + p {
 main section article {
   padding: 16px;
   width: clamp(210px, 50vw, 80vw);
-  /* width: 210px; */
+  width: calc(100% - 100px);
   flex-shrink: 0;
-  scroll-snap-type: y;
+  scroll-snap-align: end;
+  /* margin-left: 50px; */
 }
 
-article:nth-child(2) {
-  width: 100%;
+section:focus {
+  border: var(--primary) 2px solid;
 }
 
 /* Hiding content the right way
