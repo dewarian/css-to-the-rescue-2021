@@ -1,7 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+/* Variabelen beschikbaar door de gehele applicatie */
 :root{
   --black: 0,0,0;
   --white: 255,255,255;
@@ -23,7 +22,7 @@ body {
   display: grid;
   grid-template-rows: [nav-begin] 100px [nav-end] 2fr [middle-end] auto [categories];
   /* https://dev.to/clairecodes/how-to-create-a-polka-dot-background-with-css-23m0  */
-  background-image: radial-gradient(rgba(var(--black), 0.05) 3px, #ffffff00 0px);
+  background-image: radial-gradient(rgba(var(--black), 0.05) 3px, rgba(var(--black),00) 0px);
   background-size: 24px 24px;
 }
 
@@ -37,7 +36,6 @@ body > header {
 }
 
 main {
-  /* grid-area: nav-end / main-begin / content-end / main-end; */
   display: grid;
   grid-template-rows: repeat(2, minmax(300px, 1fr));
   gap: 1em;
@@ -46,7 +44,6 @@ main {
 main section {
   min-height: 300px;
   height: 15vw;
-  /* padding: 0.5em 0.5em 0.5em 0; */
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
