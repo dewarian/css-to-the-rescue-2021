@@ -52,17 +52,33 @@ What do I want to improve further? Which CSS skills will I improve upon?
 
 # Week 3
 
+![](style/assets/progression_3.gif)
+
 ## Progression week 3
+
+Created a grid in a grid with flex items and learned about snapping elements within
 
 ### Went Well
 
+Learning about the flex and how to apply it to create scrolling components.
+
+refactoring the code to be concise without extra.
+
 ### Went Bad
+
+Working with animations and transistions as that was my plan for this week.
 
 ### Insights CSS-POWER
 
+CSS has alot of hidden properties that change the whole dynamic.
+
 ### Change of Plans
 
+Changing the concept to allow for CSS experimentations. Don't be bland, be extravagant.
+
 ### New Challenges
+
+Making it pretty with animations and transitions. Possibly go wild and do something special per section.
 
 # Week 2
 
