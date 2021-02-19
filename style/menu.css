@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-/* Variabelen beschikbaar door de gehele applicatie */
+/* Variables that are accessible throughout the whole page*/
 :root{
   --black: 0,0,0;
   --white: 255,255,255;
