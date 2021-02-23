@@ -55,6 +55,7 @@ main section {
   border: rgb(var(--black)) 1px solid;
 
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 /* Hide scrollbar, keep functionality Chrome, Safari */
 main section::-webkit-scrollbar{
@@ -92,6 +93,10 @@ main section article {
   flex-shrink: 0;
   scroll-snap-align: end;
   /* margin-left: 50px; */
+}
+
+main section article div:last-of-type::before{
+content: ''
 }
 
 section:focus {
