@@ -34,21 +34,44 @@ There are two restrictions in this course:
 
 ## Result
 
+![image](https://user-images.githubusercontent.com/13199349/109813517-c24b0100-7c2d-11eb-9eb9-dfdbff3ef33a.png)
+
 ## Tip Top Improve
+
+**TIP:**
+
+- Experiment more with foreign CSS techniques
+
+**TOP:**
+
+- GRID / FLEX
+- Keyboard accessibility
+
+**IMPROVE:**
+
+- Use new techniques, shapes, animation
 
 ### Went Well
 
+Creating a responsive website that works on all kinds of displays.
+
 ### Went Bad
+
+Experimenting to a sufficient level with many css tricks.
 
 ### Proud
 
+Keeping the CSS concise and using variable css calculation tricks such as `clamp`, `calc` or `minmax`
+
 ## Insight
 
-What have I learned
+What have I learned is that flex can do a whole lot more than just aligning content on a horizontal axis. The scrolling part blew my mind. Also I have learned that everything is possible with CSS if you experiment, it is a matter of attempting and recreating. Clamp really gave me an insight to write less CSS for more. I can condense `min-width`, `width` and `max-width` in one line with `width: clamp()`.
 
 ## Misc
 
 What do I want to improve further? Which CSS skills will I improve upon?
+
+I would like to experiment with CSS shapes and animations to create a visual cohesive design that can strengthen the content. I feel like I should have experimented more and disregard the original shape of the HTML and edit it more. throw away the skeletal structure thought and grow some bones with CSS.
 
 # Week 3
 
