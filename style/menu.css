@@ -161,11 +161,6 @@
       drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--neonKleur))
       drop-shadow(0 0 calc(var(--radiusGlow) / 2) var(--neonKleur))
       drop-shadow(0 0 calc(var(--radiusGlow) / .5) var(--neonKleur));
-      /* animation: flickering 1s ease-in 0 infinite normal none; */
-      /* animation: flickering 1s ease-in 0 infinite normal none; */
-    }
-
-    body > header > h1:hover {
       animation: flicker 0.5s ease-in-out 0.5s infinite alternate;
     }
 
