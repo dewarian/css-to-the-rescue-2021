@@ -141,6 +141,16 @@
       background-size: 24px 24px;
     }
   
+    body::-webkit-scrollbar {
+      width: 5px;
+      background-color: rgba(var(--white), 0.1);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: var(--secondary);
+      border-radius: 15px;
+    }
+
     body > header {
       grid-row-start: nav-begin;
       grid-row-end: nav-end;
@@ -161,7 +171,11 @@
       drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--neonKleur))
       drop-shadow(0 0 calc(var(--radiusGlow) / 2) var(--neonKleur))
       drop-shadow(0 0 calc(var(--radiusGlow) / .5) var(--neonKleur));
-      animation: flicker 0.5s ease-in-out 0.5s infinite alternate;
+      animation: flicker 0.4s ease-out 1s 5;
+    }
+
+    body h1:first-of-type:hover {
+      animation: flicker 0.4s ease-out 1s infinite;
     }
 
     @keyframes flicker {
@@ -175,10 +189,10 @@
       }
       to {
         filter: 
-        drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--secondary))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--secondary))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 2) var(--secondary))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 0.5) var(--secondary));
+        drop-shadow(0 0 calc(var(--radiusGlow) / 4) rgba(var(--black), 0.2))
+        drop-shadow(0 0 calc(var(--radiusGlow) / 4) rgba(var(--black), 0.2))
+        drop-shadow(0 0 calc(var(--radiusGlow) / 2) rgba(var(--black), 0.2))
+        drop-shadow(0 0 calc(var(--radiusGlow) / 0.5) rgba(var(--black), 0.2));
       }
     }
 
@@ -249,6 +263,7 @@
     section:focus {
       border: var(--primary) 2px solid;
     }
+
 }
 
 /* Hiding content the right way
