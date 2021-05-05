@@ -1,4 +1,4 @@
-** Table Of Content **
+**Table Of Content**
 - [Info](#info)
 - [Resit](#resit)
   - [Result](#result)

@@ -1,283 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
-@media (prefers-color-scheme: light) {
-  /* Variables that are accessible throughout the whole page*/
-  :root{
-    --black: 0,0,0;
-    --white: 255,255,255;
-    --darkmode: #0E0E0E;
-    --lightmode: #fff;
-    --secondary: #f1d302;
-    --primary: #235789;
-    --milkshake: #FFE8E8 url("https://milkshake-production-looks.imgix.net/assets/1d9682ec049defd6d8284e8b7f3b6472.svg") center center no-repeat
-  }
-  * {
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    width: clamp(350px, 75vw, 90vw);
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: [nav-begin] 100px [nav-end] 2fr [middle-end] auto [categories];
-    /* https://dev.to/clairecodes/how-to-create-a-polka-dot-background-with-css-23m0  */
-    background-image: radial-gradient(rgba(var(--black), 0.05) 3px, rgba(var(--black),00) 0px);
-    background-size: 24px 24px;
-  }
-
-  body > header {
-    grid-row-start: nav-begin;
-    grid-row-end: nav-end;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1vw;
-  }
-
-  main {
-    display: grid;
-    grid-template-rows: repeat(2, minmax(300px, 1fr));
-    gap: 1em;
-  }
-
-  main section {
-    min-height: 300px;
-    height: 15vw;
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    /* Hide scrollbar keep functionality Edge & Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    background-color: rgb(var(--white));
-    border: rgb(var(--black)) 1px solid;
-
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
-  /* Hide scrollbar, keep functionality Chrome, Safari */
-  main section::-webkit-scrollbar{
-    display: none;
-  }
-
-  main section header {
-    background-color: var(--primary);
-    color: rgb(var(--white));
-    text-transform: uppercase;
-    position: sticky;
-    left: 0;
-    height: 100%;
-  }
-
-  main section header {
-    padding: 0.3em;
-    writing-mode: vertical-lr;
-  }
-
-  header > h2 {
-    font-size: clamp(1.5em, 100vh, 15px);
-  }
-
-  h2 + p {
-    background-color: var(--secondary);
-    font-size: clamp(0.8rem, 1rem, 99px);
-    
-  }
-
-  main section article {
-    padding: 16px;
-    width: clamp(210px, 50vw, 80vw);
-    width: calc(100% - 100px);
-    flex-shrink: 0;
-    scroll-snap-align: end;
-  }
-
-  main section article div:last-of-type::before{
-  content: ''
-  }
-
-  section:focus {
-    border: var(--primary) 2px solid;
-  }
-}
-
 /* 
---------------- DARK MODE STARTS ---------------
+TODO: Make it RESPONSIVE
+TODO: Kies een context of meerdere (print-stylesheet, prefers-reduced-motion, prefers-color-scheme (dark | light), inputtype)
+TODO: kies Eisen:
+          ? SVG toepassen, shapes, masks, filters.
+          ? Twee kleuren.
+          ? Geen vierkanten rechthoeken cirkels driehoeken.
+          ? comply to AAA WCAG spec
+          ? Responsive without queries
+          ? Optimalisatie (onder 73kb)
+TODO: Zo min mogelijk id's classes, eerst kijken naar selectoren
+TODO: Geen JS
 */
-@media (prefers-color-scheme: dark) {
-    /* Variables that are accessible throughout the whole page*/
-    :root{
-      --black: 0,0,0;
-      --white: 255,255,255;
-      --darkmode: #0E0E0E;
-      --lightmode: #fff;
-      --secondary: #f1d302;
-      --primary: #235789;
 
-      --radiusGlow: .2em;
-      --neonKleur:var(--primary);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@400;500;700;900&display=swap');
+:root {
+  --ff-sf: 'Montserrat', sans-serif;
+  --ff-s: 'Playfair Display', serif;
+  --fs: 1rem;
+  --background:hsl(18, 93%, 82%);
+  --main-text: hsl(18, 93%, 20%);
+}
 
-      --milkshake: #FFE8E8 url("https://milkshake-production-looks.imgix.net/assets/1d9682ec049defd6d8284e8b7f3b6472.svg") center center no-repeat
-    }
-    * {
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-  
-    body {
-      width: clamp(350px, 75vw, 90vw);
-      margin: 0 auto;
-      display: grid;
-      grid-template-rows: [nav-begin] 100px [nav-end] 2fr [middle-end] auto [categories];
-      background-color: rgba(var(--black));
-      /* https://dev.to/clairecodes/how-to-create-a-polka-dot-background-with-css-23m0  */
-      background-image: radial-gradient(rgba(var(--white), 0.05) 3px, rgba(var(--white),00) 0px);
-      background-size: 24px 24px;
-    }
-  
-    body::-webkit-scrollbar {
-      width: 5px;
-      background-color: rgba(var(--white), 0.1);
-    }
+* {
+  box-sizing: border-box;
+}
 
-    body::-webkit-scrollbar-thumb {
-      background-color: var(--secondary);
-      border-radius: 15px;
-    }
+body {
+  /* background-color: var(--background); */
+  color: var(--main-text);
+  margin: 0;
+}
 
-    body > header {
-      grid-row-start: nav-begin;
-      grid-row-end: nav-end;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 1vw;
-    }
-
-    body > header h1, p {
-      color:rgba(var(--white), 1)
-    }
-
-    body > header > h1 {
-      filter:
-      drop-shadow(0 0 .1em currentcolor)
-      drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--neonKleur))
-      drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--neonKleur))
-      drop-shadow(0 0 calc(var(--radiusGlow) / 2) var(--neonKleur))
-      drop-shadow(0 0 calc(var(--radiusGlow) / .5) var(--neonKleur));
-      animation: flicker 0.4s ease-out 1s 5;
-    }
-
-    body h1:first-of-type:hover {
-      animation: flicker 0.4s ease-out 1s infinite;
-    }
-
-    @keyframes flicker {
-      from {
-        filter: 
-        drop-shadow(0 0 .1em currentcolor)
-        drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--neonKleur))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 4) var(--neonKleur))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 2) var(--neonKleur))
-        drop-shadow(0 0 calc(var(--radiusGlow) / .5) var(--neonKleur));
-      }
-      to {
-        filter: 
-        drop-shadow(0 0 calc(var(--radiusGlow) / 4) rgba(var(--black), 0.2))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 4) rgba(var(--black), 0.2))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 2) rgba(var(--black), 0.2))
-        drop-shadow(0 0 calc(var(--radiusGlow) / 0.5) rgba(var(--black), 0.2));
-      }
-    }
-
-    main {
-      display: grid;
-      grid-template-rows: repeat(2, minmax(300px, 1fr));
-      gap: 1em;
-    }
-  
-    main section {
-      min-height: 300px;
-      height: 15vw;
-      display: flex;
-      overflow-x: auto;
-      overflow-y: hidden;
-      /* Hide scrollbar keep functionality Edge & Firefox */
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-  
-      background-color: var(--primary);
-      border: rgb(var(--white)) 1px solid;
-  
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-    }
-    /* Hide scrollbar, keep functionality Chrome, Safari */
-    main section::-webkit-scrollbar{
-      display: none;
-    }
-  
-    main section header {
-      background-color: var(--primary);
-      color: rgb(var(--white));
-      text-transform: uppercase;
-      position: sticky;
-      left: 0;
-      height: 100%;
-    }
-  
-    main section header {
-      padding: 0.3em;
-      writing-mode: vertical-lr;
-    }
-  
-    header > h2 {
-      font-size: clamp(1.5em, 100vh, 15px);
-    }
-  
-    h2 + p {
-      background-color: var(--secondary);
-      font-size: clamp(0.8rem, 1rem, 99px);
-      
-    }
-  
-    main section article {
-      padding: 16px;
-      width: clamp(210px, 50vw, 80vw);
-      width: calc(100% - 100px);
-      flex-shrink: 0;
-      scroll-snap-align: end;
-      /* margin-left: 50px; */
-    }
-  
-    main section article div:last-of-type::before{
-    content: ''
-    }
-  
-    section:focus {
-      border: var(--primary) 2px solid;
-    }
+body > header {
+  background-color: var(--background);
 
 }
 
-/* Hiding content the right way
-  Source: https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
-  Author: Dave Rupert
-  Published: 13-02-2013
-  Updated: 28-07-2019 by Michael Fairchild
-*/
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
+header:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 75vw;
+  /* display: flex;
+  justify-content: center;
+  gap: 1em; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+main header {
+  align-self: end;
+  border-bottom: 1px solid #6e6969;
+}
+
+main header, header h2+p {
+  margin: 0em;
+} 
+
+main section:nth-of-type(2n) {
+  border-right: 1px solid #6e6969;
+}
+
+section {
+  padding: 0 1em;
+}
+
+p,div {
+  font-family: var(--ff-sf);
+  font-size: calc(var(--fs) * 0.95);
+  margin-top: 0.5em;
+}
+
+h1,h2,h3,h4 {
+  font-family: var(--ff-s);
+  margin-bottom: 0.5em;
+}
+
+header h1 {
+  font-size: clamp(2em, 3vw, 4em);
+  margin-bottom: 0em;
+}
+
+main header p {
+  font-size: calc(var(--fs) * 0.75);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--background);
+}
+
+article div{
+  align-self: flex-end;
+  position: relative;
+}
+
+article div::before {
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  content: '€';
+  border-bottom: 2px solid var(--background);
+  filter: hue-rotate(180deg) saturate(50%);
+  right: 1.5em;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  line-height: 0.9;
+}
+
+/* ! For darkmode screens */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:hsl(240, 11%, 2%);
+    --main-text: hsl(240, 10%, 80%);
+  }
+}
+
+/* ! For screens */
+@media screen {
+
+}
+
+/* ! For printing */
+@media print {
+
 }
