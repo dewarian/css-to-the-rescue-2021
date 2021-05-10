@@ -12,127 +12,229 @@ TODO: Zo min mogelijk id's classes, eerst kijken naar selectoren
 TODO: Geen JS
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@400;500;700;900&display=swap');
-:root {
-  --ff-sf: 'Montserrat', sans-serif;
-  --ff-s: 'Playfair Display', serif;
-  --fs: 1rem;
-  --background:hsl(18, 93%, 82%);
-  --main-text: hsl(18, 93%, 20%);
-}
+/* ! For screens */
+@media screen {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  /* background-color: var(--background); */
-  color: var(--main-text);
-  margin: 0;
-}
-
-body > header {
-  background-color: var(--background);
-
-}
-
-header:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 2em;
-}
-
-main {
-  margin: 0 auto;
-  max-width: 75vw;
-  /* display: flex;
-  justify-content: center;
-  gap: 1em; */
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-}
-
-main header {
-  align-self: end;
-  border-bottom: 1px solid #6e6969;
-}
-
-main header, header h2+p {
-  margin: 0em;
-} 
-
-main section:nth-of-type(2n) {
-  border-right: 1px solid #6e6969;
-}
-
-section {
-  padding: 0 1em;
-}
-
-p,div {
-  font-family: var(--ff-sf);
-  font-size: calc(var(--fs) * 0.95);
-  margin-top: 0.5em;
-}
-
-h1,h2,h3,h4 {
-  font-family: var(--ff-s);
-  margin-bottom: 0.5em;
-}
-
-header h1 {
-  font-size: clamp(2em, 3vw, 4em);
-  margin-bottom: 0em;
-}
-
-main header p {
-  font-size: calc(var(--fs) * 0.75);
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 0.2em;
-  border-bottom: 1px solid var(--background);
-}
-
-article div{
-  align-self: flex-end;
-  position: relative;
-}
-
-article div::before {
-  position: absolute;
-  content: '€';
-  border-bottom: 2px solid var(--background);
-  filter: hue-rotate(180deg) saturate(50%);
-  right: 1.5em;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
-  font-style: italic;
-  line-height: 0.9;
-}
-
-/* ! For darkmode screens */
-@media (prefers-color-scheme: dark) {
   :root {
-    --background:hsl(240, 11%, 2%);
-    --main-text: hsl(240, 10%, 80%);
+    --ff-sf: 'Montserrat', sans-serif;
+    --ff-s: 'Playfair Display', serif;
+    --fs: 1rem;
+    --background: hsl(18, 93%, 82%);
+    --main-text: hsl(18, 93%, 20%);
+    --border: hsl(18, 2%, 42%);
+    --color-black: #000;
+    --color-white: #fff;
+    /* --header-text-shadow: -1px -1px 0 var(--color-black), 0 -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 0 0 var(--color-black), 1px 0 0 var(--color-black), -1px 1px 0 var(--color-black), 0 1px 0 var(--color-black), 1px 1px 0 var(--color-black), -2px -2px 0 var(--color-black), -1px -2px 0 var(--color-black), 0 -2px 0 var(--color-black), 1px -2px 0 var(--color-black), 2px -2px 0 var(--color-black), 2px -1px 0 var(--color-black), 2px 0 0 var(--color-black), 2px 1px 0 var(--color-black), 2px 2px 0 var(--color-black), 1px 2px 0 var(--color-black), 0 2px 0 var(--color-black), -1px 2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px 1px 0 var(--color-black), -2px 0 0 var(--color-black), -2px -1px 0 var(--color-black), -3px -3px 0 var(--color-black), -2px -3px 0 var(--color-black), 0 -3px 0 var(--color-black), 2px -3px 0 var(--color-black), 3px -3px 0 var(--color-black), 3px -2px 0 var(--color-black), 3px 0 0 var(--color-black), 3px 2px 0 var(--color-black), 3px 3px 0 var(--color-black), 2px 3px 0 var(--color-black), 0 3px 0 var(--color-black), -2px 3px 0 var(--color-black), -3px 3px 0 var(--color-black), -3px 2px 0 var(--color-black), -3px 0 0 var(--color-black), -3px -2px 0 var(--color-black), -3px -3px 0 var(--color-black), -1px -3px 0 var(--color-black), 0 -3px 0 var(--color-black), 1px -3px 0 var(--color-black), 3px -3px 0 var(--color-black), 3px -1px 0 var(--color-black), 3px 0 0 var(--color-black), 3px 1px 0 var(--color-black), 3px 3px 0 var(--color-black), 1px 3px 0 var(--color-black), 0 3px 0 var(--color-black), -1px 3px 0 var(--color-black), -3px 3px 0 var(--color-black), -3px 1px 0 var(--color-black), -3px 0 0 var(--color-black), -3px -1px 0 var(--color-black), -3px 4px 0 var(--color-black), 0px 4px 0 var(--color-black), 3px 4px 0 var(--color-black), -3px 5px 0 var(--color-black), 0px 5px 0 var(--color-black), 3px 5px 0 var(--color-black), -3px 6px 0 var(--color-black), 0px 6px 0 var(--color-black), 3px 6px 0 var(--color-black), -3px 7px 0 var(--color-black), 0px 7px 0 var(--color-black), 3px 7px 0 var(--color-black), -3px 8px 0 var(--color-black), 0px 8px 0 var(--color-black), 3px 8px 0 var(--color-black), -3px 9px 0 var(--color-black), 0px 9px 0 var(--color-black), 3px 9px 0 var(--color-black), -3px 10px 0 var(--color-black), 0px 10px 0 var(--color-black), 3px 10px 0 var(--color-black), -3px 11px 0 var(--color-black), 0px 11px 0 var(--color-black), 3px 11px 0 var(--color-black), -3px 12px 0 var(--color-black), 0px 12px 0 var(--color-black), 3px 12px 0 var(--color-black), -3px 13px 0 var(--color-black), 0px 13px 0 var(--color-black), 3px 13px 0 var(--color-black), -3px 14px 0 var(--color-black), 0px 14px 0 var(--color-black), 3px 14px 0 var(--color-black), -3px 15px 0 var(--color-black), 0px 15px 0 var(--color-black), 3px 15px 0 var(--color-black), -3px 16px 0 var(--color-black), 0px 16px 0 var(--color-black), 3px 16px 0 var(--color-black), -3px 17px 0 var(--color-black), 0px 17px 0 var(--color-black), 3px 17px 0 var(--color-black), -3px 18px 0 var(--color-black), 0px 18px 0 var(--color-black), 3px 18px 0 var(--color-black); */
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: var(--main-text);
+    margin: 0;
+  }
+
+  body>header {
+    background-color: var(--background);
+
+  }
+
+  header:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  main {
+    margin: 0 auto;
+    max-width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+
+  main header {
+    align-self: end;
+    border-bottom: 1px solid var(--border);
+  }
+
+  main header,
+  header h2+p {
+    margin: 0em;
+  }
+
+  /* header label::before {
+    content: attr(data-tooltip);
+    width: 200px;
+  } */
+
+  header label:hover {
+    filter: hue-rotate(80deg);
+  }
+
+  main section:nth-of-type(2n) {
+    border-right: 1px solid var(--border);
+  }
+
+  section {
+    padding: 0 1em;
+    margin-bottom: 2em;
+  }
+
+  p,
+  div {
+    font-family: var(--ff-sf);
+    font-size: calc(var(--fs) * 0.95);
+    margin-top: 0.5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-s);
+    margin-bottom: 0.5em;
+  }
+
+  header h1 {
+    font-size: clamp(2em, 3vw, 4em);
+    margin-bottom: 0em;
+  }
+
+  main header p {
+    font-size: calc(var(--fs) * 0.75);
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  article div {
+    align-self: flex-end;
+    position: relative;
+  }
+
+  article div::before {
+    content: '€';
+    padding-right: 0.5em;
+
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+  }
+
+  #colormode {
+    display: none;
+  }
+
+  [id="colormode"]:checked~header,
+  [id="colormode"]:checked~main {
+    --ff-space: 'Space Mono', monospace;
+    filter: hue-rotate(180deg);
+  }
+
+  /* ! For darkmode screens */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ff-space: 'Space Mono', monospace;
+      --background: hsl(217, 69%, 7%);
+      --main-text: hsl(207, 28%, 61%);
+      --accent: hsl(217, 75%, 10%);
+      --color-black: hsl(217, 75%, 40%);
+      --border: hsl(217, 75%, 80%);
+    }
+
+    body {
+      background-color: var(--accent);
+    }
+
+    body>header {
+      background-color: var(--background);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--ff-space);
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0.2em;
+      border-bottom: 1px solid var(--border);
+      filter: blur(0.2em);
+    }
+
+    article:hover {
+      filter: blur(0em);
+      background-color: var(--background);
+      padding: 1em;
+      border: 2px solid var(--border);
+      border-radius: 5px;
+      transform-origin: top left;
+      animation: dance 1s 500ms ease-in 1 forwards, pulse 500ms ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes dance {
+      100% {
+        transform: rotate3d(-1, -1, -1, 330deg);
+      }
+    }
+
+    @keyframes pulse {
+      to {
+        box-shadow: 0 0 1em 0.2em var(--border);
+      }
+    }
+    body header span {
+      background-image: linear-gradient(45deg, var(--main-text), var(--color-black));
+      background-size: 100%;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      /* background: radial-gradient(#fff 20%,  transparent 0), radial-gradient(#fff 20%, transparent 0);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; */
+  }
+
+  body header label {
+         /* 
+      Didn't copy, but attempted on simulating the idea from stylestage.
+      generator taught me how the horizontal and vertical axis worked based on dedgree and distance.
+      https://stylestage.dev/styles/comic/
+      https://css3gen.com/text-shadow/
+      */
+      text-shadow:
+        -1px 0px var(--color-black),
+        -2px 1px var(--color-black),
+        -3px 1px var(--color-black),
+        -4px 2px var(--color-black),
+        -5px 3px var(--color-black),
+        0px 1px var(--color-black),
+        -1px 2px var(--color-black),
+        -1px 3px var(--color-black),
+        -2px 3px var(--color-black),
+        -2px 4px var(--color-black);
+    }
+
   }
 }
 
-/* ! For screens */
-@media screen {
-
-}
-
 /* ! For printing */
-@media print {
-
-}
+@media print {}
