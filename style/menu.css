@@ -68,11 +68,6 @@ TODO: Geen JS
     margin: 0em;
   }
 
-  /* header label::before {
-    content: attr(data-tooltip);
-    width: 200px;
-  } */
-
   header label:hover {
     filter: hue-rotate(80deg);
   }
@@ -104,6 +99,8 @@ TODO: Geen JS
   header h1 {
     font-size: clamp(2em, 3vw, 4em);
     margin-bottom: 0em;
+    transform: rotate(-5deg);
+
   }
 
   main header p {
@@ -177,7 +174,7 @@ TODO: Geen JS
       filter: blur(0.2em);
     }
 
-    article:hover {
+    article:hover, article:active {
       filter: blur(0em);
       background-color: var(--background);
       padding: 1em;
@@ -203,8 +200,8 @@ TODO: Geen JS
       background-size: 100%;
       background-repeat: repeat;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
       /* background: radial-gradient(#fff 20%,  transparent 0), radial-gradient(#fff 20%, transparent 0);
       background-size: 20px 20px;
