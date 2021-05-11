@@ -215,19 +215,26 @@ TODO: Geen JS
 
     body header span {
       background-image: linear-gradient(45deg, var(--main-text), var(--color-black));
-      background-size: 100%;
+      /* background-size: 100%;
       background-repeat: repeat;
       background-clip: text;
       text-fill-color: transparent;
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
+      -moz-text-fill-color: transparent; */
 
       /* background: radial-gradient(#fff 20%,  transparent 0), radial-gradient(#fff 20%, transparent 0);
       background-size: 20px 20px;
       background-position: 0 0, 10px 10px;
       background-clip: text;
       -webkit-text-fill-color: transparent; */
+      /* background-image: linear-gradient(90deg, #f79533 0%, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%); */
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      }
     }
 
     body header label {
