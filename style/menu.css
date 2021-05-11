@@ -175,19 +175,23 @@ TODO: Geen JS
       filter: blur(0.2em);
     }
 
-    article:hover, article:focus {
-      filter: blur(0em); 
-      background-color: var(--background);
-      padding: 1em;
-      border: 2px solid var(--border);
-      border-radius: 5px;
-      transform-origin: top left;
-      animation: dance 1s 500ms ease-in 1 forwards, pulse 500ms ease-in-out infinite alternate-reverse;
+    @media (hover: hover) {
+
+      article:hover,
+      article:focus {
+        filter: blur(0em);
+        background-color: var(--background);
+        padding: 1em;
+        border: 2px solid var(--border);
+        border-radius: 5px;
+        transform-origin: top left;
+        animation: dance 1s 500ms ease-in 1 forwards, pulse 500ms ease-in-out infinite alternate-reverse;
+      }
     }
 
-    @media (hover: hover) and (pointer: coarse) {
-      article:hover, article:focus {
-        filter: blur(0em); 
+    @media (pointer: coarse) {
+      article {
+        filter: blur(0em);
         background-color: var(--background);
         padding: 1em;
         border: 2px solid var(--border);
@@ -208,6 +212,7 @@ TODO: Geen JS
         box-shadow: 0 0 1em 0.2em var(--border);
       }
     }
+
     body header span {
       background-image: linear-gradient(45deg, var(--main-text), var(--color-black));
       background-size: 100%;
@@ -221,10 +226,10 @@ TODO: Geen JS
       background-position: 0 0, 10px 10px;
       background-clip: text;
       -webkit-text-fill-color: transparent; */
-  }
+    }
 
-  body header label {
-         /* 
+    body header label {
+      /* 
       Didn't copy, but attempted on simulating the idea from stylestage.
       generator taught me how the horizontal and vertical axis worked based on dedgree and distance.
       https://stylestage.dev/styles/comic/
