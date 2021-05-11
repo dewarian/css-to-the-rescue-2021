@@ -218,9 +218,11 @@ TODO: Geen JS
       background-size: 100%;
       background-repeat: repeat;
       background-clip: text;
+      text-fill-color: transparent;
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
+
       /* background: radial-gradient(#fff 20%,  transparent 0), radial-gradient(#fff 20%, transparent 0);
       background-size: 20px 20px;
       background-position: 0 0, 10px 10px;
