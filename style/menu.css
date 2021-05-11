@@ -35,9 +35,9 @@ For Screens
     --accent-200: hsl(18, 93%, 22%);
     --main-text: hsl(18, 93%, 20%);
     --border: hsl(18, 2%, 42%);
-    --color-black: #000;
-    --color-black-alt: #ddd;
-    --color-white: #fff;
+    --color-black: hsl(0, 0%, 0%);
+    --color-black-alt: hsl(0, 0%, 87%);
+    --color-white: hsl(0, 0%, 100%);
     /* --header-text-shadow: -1px -1px 0 var(--color-black), 0 -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 0 0 var(--color-black), 1px 0 0 var(--color-black), -1px 1px 0 var(--color-black), 0 1px 0 var(--color-black), 1px 1px 0 var(--color-black), -2px -2px 0 var(--color-black), -1px -2px 0 var(--color-black), 0 -2px 0 var(--color-black), 1px -2px 0 var(--color-black), 2px -2px 0 var(--color-black), 2px -1px 0 var(--color-black), 2px 0 0 var(--color-black), 2px 1px 0 var(--color-black), 2px 2px 0 var(--color-black), 1px 2px 0 var(--color-black), 0 2px 0 var(--color-black), -1px 2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px 1px 0 var(--color-black), -2px 0 0 var(--color-black), -2px -1px 0 var(--color-black), -3px -3px 0 var(--color-black), -2px -3px 0 var(--color-black), 0 -3px 0 var(--color-black), 2px -3px 0 var(--color-black), 3px -3px 0 var(--color-black), 3px -2px 0 var(--color-black), 3px 0 0 var(--color-black), 3px 2px 0 var(--color-black), 3px 3px 0 var(--color-black), 2px 3px 0 var(--color-black), 0 3px 0 var(--color-black), -2px 3px 0 var(--color-black), -3px 3px 0 var(--color-black), -3px 2px 0 var(--color-black), -3px 0 0 var(--color-black), -3px -2px 0 var(--color-black), -3px -3px 0 var(--color-black), -1px -3px 0 var(--color-black), 0 -3px 0 var(--color-black), 1px -3px 0 var(--color-black), 3px -3px 0 var(--color-black), 3px -1px 0 var(--color-black), 3px 0 0 var(--color-black), 3px 1px 0 var(--color-black), 3px 3px 0 var(--color-black), 1px 3px 0 var(--color-black), 0 3px 0 var(--color-black), -1px 3px 0 var(--color-black), -3px 3px 0 var(--color-black), -3px 1px 0 var(--color-black), -3px 0 0 var(--color-black), -3px -1px 0 var(--color-black), -3px 4px 0 var(--color-black), 0px 4px 0 var(--color-black), 3px 4px 0 var(--color-black), -3px 5px 0 var(--color-black), 0px 5px 0 var(--color-black), 3px 5px 0 var(--color-black), -3px 6px 0 var(--color-black), 0px 6px 0 var(--color-black), 3px 6px 0 var(--color-black), -3px 7px 0 var(--color-black), 0px 7px 0 var(--color-black), 3px 7px 0 var(--color-black), -3px 8px 0 var(--color-black), 0px 8px 0 var(--color-black), 3px 8px 0 var(--color-black), -3px 9px 0 var(--color-black), 0px 9px 0 var(--color-black), 3px 9px 0 var(--color-black), -3px 10px 0 var(--color-black), 0px 10px 0 var(--color-black), 3px 10px 0 var(--color-black), -3px 11px 0 var(--color-black), 0px 11px 0 var(--color-black), 3px 11px 0 var(--color-black), -3px 12px 0 var(--color-black), 0px 12px 0 var(--color-black), 3px 12px 0 var(--color-black), -3px 13px 0 var(--color-black), 0px 13px 0 var(--color-black), 3px 13px 0 var(--color-black), -3px 14px 0 var(--color-black), 0px 14px 0 var(--color-black), 3px 14px 0 var(--color-black), -3px 15px 0 var(--color-black), 0px 15px 0 var(--color-black), 3px 15px 0 var(--color-black), -3px 16px 0 var(--color-black), 0px 16px 0 var(--color-black), 3px 16px 0 var(--color-black), -3px 17px 0 var(--color-black), 0px 17px 0 var(--color-black), 3px 17px 0 var(--color-black), -3px 18px 0 var(--color-black), 0px 18px 0 var(--color-black), 3px 18px 0 var(--color-black); */
   }
 
@@ -47,113 +47,152 @@ For Screens
   }
 
   @media (prefers-color-scheme: light) {
-
-  body {
-    margin: 1em;
-    background-image: -webkit-repeating-radial-gradient( center center, var(--color-black), var(--color-black) 1px, var(--color-white) 1px, var(--color-white) 100% );
-    background-size: 8px 8px;
-  }
-
-  body main {
-    max-width: 75vw;
-    margin: 0 auto;
-  }
-
-  body>header {
-    text-align: center;
-    border: 6px solid var(--color-black);
-    background-color: var(--color-white);
-    border-radius: 1em 4em 4em 1em/1em 4em 4em 1em;
+    body {
+      margin: 1em;
+      background-image: -webkit-repeating-radial-gradient(center center, var(--color-black), var(--color-black) 1px, var(--color-white) 1px, var(--color-white) 100%);
+      background-size: 8px 8px;
     }
 
-  body>header h1 {
-    margin-top: 0.5em;
-  }
+    body main {
+      max-width: 75vw;
+      margin: 0 auto;
+    }
 
-  body > header h1 span:first-of-type {
-    visibility: hidden;
-  }
-  body > header h1 span:first-of-type:after {
-    content: 'macOS';
-    visibility: visible;
-    padding-right: 0.5em;
-  }
+    body>header {
+      text-align: center;
+      border: 6px solid var(--color-black);
+      background-color: var(--color-white);
+      border-radius: 1em 4em 4em 1em/1em 4em 4em 1em;
+    }
 
-  main {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(15em, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1em 1em;
-    margin: 0 5em;
-  }
+    body>header h1 {
+      margin-top: 0.5em;
+    }
 
-  @supports (grid-template-rows: masonry) {
+    body>header h1 span:first-of-type {
+      visibility: hidden;
+    }
+
+    body>header h1 span:first-of-type:after {
+      content: 'macOS';
+      visibility: visible;
+      padding-right: 0.5em;
+    }
+
     main {
-      grid-template-rows: masonry;
+      display: grid;
+      grid-template-rows: repeat(auto-fit, minmax(15em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1em 1em;
+      margin: 0 5em;
     }
-  }
 
-  main section {
-    margin-top: 2em;
-    background-color: var(--color-white);
-    border: 6px solid var(--color-black);
-    padding: 1em;
-    height: -moz-fit-content;
-    height: fit-content;
-    border: 4px solid var(--color-black);
-    border-radius: 1em;
-    -webkit-box-shadow: 12px 12px 0 0 var(--color-black);
-    box-shadow: 12px 12px 0 0 var(--color-black);
-    background: repeating-radial-gradient( green, green 6px, var(--color-black) 6px, var(--color-black) 10px, transparent 0%, transparent 100% ), 
-                repeating-radial-gradient( #F9BC2E, #F9BC2E 6px, var(--color-black) 6px, var(--color-black) 10px, transparent 0%, transparent 100% ),
-                repeating-radial-gradient( red, red 6px, var(--color-black) 6px, var(--color-black) 10px, transparent 0%, transparent 100% ),
-                linear-gradient( var(--color-black-alt), var(--color-black-alt) 60px, var(--color-black) 60px, var(--color-black) 64px );
-    background-color: var(--color-white);
-    background-position: right 5px, right 50px top 5px, right 25px top 5px, 0 0;
-    background-size: 50px 50px, 50px 50px, 50px 50px, 100% 64px;
-    background-repeat: no-repeat;
-  }
+    @supports (grid-template-rows: masonry) {
+      main {
+        grid-template-rows: masonry;
+      }
+    }
 
-  main section article {
-    background-color: var(--color-white);
-    border: 3px solid var(--color-black);
-    margin-bottom: 2em;
-    padding: 1em;
-    /* height: clamp(150px, 13em, 15em); */
-    height: 12em;
-    box-shadow: inset -0.3em -0.3em var(--color-black-alt);
-    /* https://cubic-bezier.com/#.7,.21,.99,.01 */
-    transition: background-color 200ms cubic-bezier(.7,.21,.99,.01), box-shadow 200ms ease-out;
-  }
+    main section {
+      margin-top: 2em;
+      background-color: var(--color-white);
+      border: 6px solid var(--color-black);
+      padding: 1em;
+      height: -moz-fit-content;
+      height: fit-content;
+      border: 4px solid var(--color-black);
+      border-radius: 1em;
+      -webkit-box-shadow: 6px 6px 0 0 var(--color-black);
+      box-shadow: 6px 6px 0 0 var(--color-black);
+      background: repeating-radial-gradient(var(--accent-200), var(--accent-200) 6px, var(--color-black) 6px, var(--color-black) 10px, transparent 0%, transparent 100%),
+        repeating-radial-gradient(var(--accent-400), var(--accent-400) 6px, var(--color-black) 6px, var(--color-black) 10px, transparent 0%, transparent 100%),
+        repeating-radial-gradient(var(--accent-800), var(--accent-800) 6px, var(--color-black) 6px, var(--color-black) 10px, transparent 0%, transparent 100%),
+        linear-gradient(var(--color-black-alt), var(--color-black-alt) 60px, var(--color-black) 60px, var(--color-black) 64px);
+      background-color: var(--color-white);
+      background-position: right 5px, right 50px top 5px, right 25px top 5px, 0 0;
+      background-size: 50px 50px, 50px 50px, 50px 50px, 100% 64px;
+      background-repeat: no-repeat;
+    }
 
-  main section article:hover {
-    color: var(--color-white);
-    background-color:var(--color-black);
-    box-shadow: none;
-  }
+    main section:nth-of-type(1):hover, main section:nth-of-type(1):focus-within {
+      animation: shadow 100ms ease-in 1 normal forwards;
+    }
 
-  main section article div:before {
-    content: '€';
-  }
+    main section:nth-of-type(2):hover, main section:nth-of-type(2):focus-within {
+      transform: rotate(0.5turn);
+      box-shadow: 12px 12px 0 0 var(--color-black);
+    }
+    main section:nth-of-type(3):hover, main section:nth-of-type(3):focus-within {
+      animation: shadow 100ms ease-out 1 normal forwards, skew 100ms ease-in 1 normal forwards;
+    }
 
-  main section article div {
-    border-bottom: 1px solid var(--color-black-alt);
-    width: min-content;
-    margin-left: 80%;
-  }
+    main section:nth-of-type(4):hover, main section:nth-of-type(4):focus-within {
+      transform: translate3d(10px, -10px, 20px);
+      box-shadow: -8px -6px 0 0 var(--color-black);
+    }
 
-  main section header > h2 {
-    margin-top: 0;
-    margin-bottom: 2em;
-  }
-    
+    @keyframes shadow {
+      from {
+        -webkit-box-shadow: 6px 6px 0 0 var(--color-black);
+        box-shadow: 6px 6px 0 0 var(--color-black);
+      }
+      to {
+        -webkit-box-shadow: 12px 12px 0 0 var(--color-black);
+        box-shadow: 12px 12px 0 0 var(--color-black);
+      }
+    }
+
+    @keyframes skew {
+      to {
+        transform: skewX(-15deg);
+        box-shadow: 8px 8px 0 0 var(--color-black);
+
+      }
+    }
+
+    main section article {
+      background-color: var(--color-white);
+      border: 3px solid var(--color-black);
+      margin-bottom: 2em;
+      padding: 1em;
+      /* height: clamp(150px, 13em, 15em); */
+      height: 12em;
+      box-shadow: inset -0.3em -0.3em var(--color-black-alt);
+      /* https://cubic-bezier.com/#.7,.21,.99,.01 */
+      transition: background-color 200ms cubic-bezier(.7, .21, .99, .01), box-shadow 200ms ease-out;
+    }
+
+    main section article:hover,main section article:focus-within {
+      --color-black-alt: hsl(0, 0%, 27%);
+      color: var(--color-white);
+      background-color: var(--color-black);
+      box-shadow: inset -0.3em -0.3em var(--color-black-alt);
+    }
+
+    main section article div:before {
+      content: '€';
+    }
+
+    main section article div {
+      border-bottom: 1px solid var(--color-black-alt);
+      width: min-content;
+      margin-left: 80%;
+    }
+
+    main section header>h2 {
+      margin-top: 0;
+      margin-bottom: 2em;
+    }
+
   }
 
 
   [id="colormode"]:checked~header,
   [id="colormode"]:checked~main {
-    --color-black: repeating-linear-gradient(var(--color-white) var(var(--color-black-alt)));
-    filter: hue-rotate(120deg);
+    /* --color-black: repeating-linear-gradient(var(--color-white) var(var(--color-black-alt))); */
+    --color-black: var(--accent-400);
+    --color-black-alt: var(--accent-800);
+
   }
 
   #colormode {
@@ -317,7 +356,8 @@ For Screens
       filter: blur(0.2em);
     }
 
-    @media (hover: hover) {
+    /* Check if hover is available */
+    @media (any-hover: hover) {
 
       article:hover,
       article:focus {
@@ -331,6 +371,7 @@ For Screens
       }
     }
 
+    /* Check if user uses a coarse pointer (touchscreen, not pen touchscreen) */
     @media (pointer: coarse) {
       article {
         filter: blur(0em);
