@@ -1,18 +1,4 @@
 /* 
-TODO: Make it RESPONSIVE
-TODO: Kies een context of meerdere (print-stylesheet, prefers-reduced-motion, prefers-color-scheme (dark | light), inputtype)
-TODO: kies Eisen:
-          ? SVG toepassen, shapes, masks, filters.
-          ? Twee kleuren.
-          ? Geen vierkanten rechthoeken cirkels driehoeken.
-          ? comply to AAA WCAG spec
-          ? Responsive without queries
-          ? Optimalisatie (onder 73kb)
-TODO: Zo min mogelijk id's classes, eerst kijken naar selectoren
-TODO: Geen JS
-*/
-
-/* 
 ============================
 
 For Screens
@@ -270,7 +256,7 @@ For Screens
       margin: 0em;
     }
 
-    header label:hover {
+    header label:hover, header label:focus, header label:focus-within {
       filter: hue-rotate(80deg);
     }
 
