@@ -52,6 +52,11 @@ For Screens
     background-size: 8px 8px;
   }
 
+  body main {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+
   body>header {
     text-align: center;
     border: 6px solid var(--color-black);
@@ -112,7 +117,8 @@ For Screens
     border: 3px solid var(--color-black);
     margin-bottom: 2em;
     padding: 1em;
-    height: clamp(150px, 13em, 15em);
+    /* height: clamp(150px, 13em, 15em); */
+    height: 12em;
     box-shadow: inset -0.3em -0.3em var(--color-black-alt);
     /* https://cubic-bezier.com/#.7,.21,.99,.01 */
     transition: background-color 200ms cubic-bezier(.7,.21,.99,.01), box-shadow 200ms ease-out;
@@ -122,6 +128,16 @@ For Screens
     color: var(--color-white);
     background-color:var(--color-black);
     box-shadow: none;
+  }
+
+  main section article div:before {
+    content: '€';
+  }
+
+  main section article div {
+    border-bottom: 1px solid var(--color-black-alt);
+    width: min-content;
+    margin-left: 80%;
   }
 
   main section header > h2 {

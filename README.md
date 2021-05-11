@@ -34,9 +34,17 @@ There are two restrictions in this course:
 # Resit
 
 ## Result
-
+![](https://cleanshot-cloud-fra.s3.eu-central-1.amazonaws.com/media/4504/HWtmTyEnGXkWHP5AuA8oIH2LUeJzMAHYpq0USwJA.gif?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEB8aDGV1LWNlbnRyYWwtMSJHMEUCIQCytekVHL%2B06yiJnscq8MGTGSkNEKW9az1pdcWEB9OzcAIgabq5o%2BSvqUgsE%2BZcCh0BLj0P%2BTZHiWe5IvfsoYoEyOQq4gEIqP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw5MTk1MTQ0OTE2NzQiDHtEGgVZwyjcSzKecCq2Aad7GdN0adbKRgjAK9uHqB8He4DKCsMTQvKPpT6ghIz2tO7qRNhK4zucMFMhYnynf45uFd2vKbgSEtahS97TPc5BqvSkLd4P2rqTCk2plDwgzs1fkSiqt%2Fy0VWo9xJzPZ04%2F7lg7l7zXfT2psKh%2B9SAh7dIRQ8tFOYfVPTE%2FR6Kazw3JWwMVG17XtoylxKexlE9PNdVoDWuQberlhWpUSxPn6IYGUIbJEcqKxtAgu3K1agvIhUGYMLi96oQGOuAB2MjwtF%2BepmmtTokx6DS5HPulrttUaot0QdlKdrfnxp8n4x4NMJNmaeenyGao6RqAgdADQqmB7DRocd5%2FikRbJcebtYAB8F%2BnXriUAwOt5Zovsre5%2FODz4gmdhbDEdE9ieVDwOe8d6Yt4gjPDwSrNqaK4m%2BvKwGhckMg8TOvYKSwC2uU5AYaHqw0d9Hs0%2F9yok4B4dlM70ow%2BIM0PiGOaJmkgdnlcPG4oRD91aumupQNUXyNC%2BkagmGFeJnepBMFxkUvLs5IlfO%2Btl1Fx7e0ksiPBzl%2FxroAcr4fBdwItk2c%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5MF2VVMNNGR2R4YN%2F20210511%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20210511T155048Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Signature=004dbd08d1f551e314b09c0eda912abe357ed74908d02fa596e6812e87e41e80)
 ## Tip Top Improve
 
+**Contexts**
+* `@media (prefers-color-scheme: dark | light) {}`
+* `@media (print) {}`
+* `@media (pointer: coarse)`
+
+**Restrictions**
+* Responsive without mediaqueries
+* Two colours
 ## Insight
 
 ## Misc
