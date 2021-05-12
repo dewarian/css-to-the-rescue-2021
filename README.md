@@ -35,6 +35,8 @@ There are two restrictions in this course:
 
 [Before the resit (Week 1 to 4).](https://github.com/dewarian/css-to-the-rescue-2021/blob/master/V1-README.md)
 ## Result
+> Disclaimer: For this concept to work as intended please enable the following flag:
+>in firefox: `layout.css.grid-template-masonry-value.enabled` set to `true`.
 
 https://nb-cttr.vercel.app/menu.html
 
